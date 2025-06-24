@@ -1,7 +1,7 @@
 const http = require('http');
 
 const server = http.createServer((req, res) => {
-  res.end('🚀 CI/CD Pipeline working! 🛠️');
+  res.end('CI/CD Pipeline working!');
 });
 
 server.listen(80, () => {
