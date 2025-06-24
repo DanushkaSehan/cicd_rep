@@ -25,11 +25,11 @@ jobs:
 
     - name: Build Docker image
       run: |
-        docker build -t ${{ secrets.ECR_REGISTRY }}:latest .
+        docker build -t ${{ secrets.ECR_REGISTRY }}:1 .
 
     - name: Push Docker image to ECR
       run: |
-        docker push ${{ secrets.ECR_REGISTRY }}:latest
+        docker push ${{ secrets.ECR_REGISTRY }}:1
 
     - name: Deploy to Amazon ECS
       run: |
